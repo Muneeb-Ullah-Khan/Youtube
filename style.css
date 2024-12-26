@@ -1,0 +1,290 @@
+.header{
+    position: fixed;
+    left: 0px;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding: 10px 50px;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:70px;
+    left: 0px;
+    z-index: 1000000;
+    bottom: 0px;
+    padding: 10px;
+}
+.logo{
+    cursor: pointer;
+}
+.logo i{
+  display: inline;
+  color: red;
+  font-size: 50px;
+}
+
+.logo p{
+    display: inline;
+    font-size: 30px;
+    vertical-align: top;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: light;
+}
+
+.logo p sup{
+    font-size: 15px;
+}
+
+.search-engine input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right:1px black solid ;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.search-engine input:focus{
+    outline: transparent;
+}
+
+.search-engine{
+    border: black 2px solid;
+    width: 400px;
+    border-radius: 20px;
+    height: 50px;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+
+.search-engine i{
+    font-size:25px ;
+    padding: 10px 10px 10px 5px;
+    cursor: pointer;
+
+}
+
+.icons{
+    display: flex;
+}
+
+.create{
+    border: 1px solid black;
+    height: 25px;
+    width: 100px;
+    font-size: 20px;
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 249);
+    cursor: pointer;
+    margin: auto 5px;
+
+}
+
+.bell{
+    font-size: 40px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.profilepic img{
+   width: 50px;
+   border-radius: 40px;
+   margin: 0px 5px;
+   margin-right: 20px;
+   cursor: pointer;
+   
+}
+
+.first-content{
+    display: flex;
+    
+}
+.firstlayout{
+    width: 400px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.firstlayoutimg img{
+    width: 400px;
+    border-radius:20px;
+}
+
+.defination-area{
+    display: flex;
+}
+
+.chanelpic img{
+    width: 50px;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+
+.text-first-layout{
+    width: 300px;
+}
+
+.videotitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.chanel-name{
+    color: rgb(123, 119, 119);
+}
+
+.revies{
+    color: rgb(123, 119, 119);
+}
+
+/* 678 */
+
+@media (max-width: 1062px) {
+    .header{
+        left: 0px;
+    }
+
+    .header{
+        padding: 10px 0px;
+    }
+
+    .logo i{
+        font-size: 40px;
+    }
+
+    .logo p{
+        font-size: 20px;
+    }
+
+    .search-engine {
+        width: 200px;
+       
+    }
+
+    .search-engine input {
+        width: 150px;
+    }
+
+    .search-engine i{
+        width: 10px;
+        color: black
+    }
+
+    .create{
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .first-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        position: relative;
+        top: 90px;
+        
+    }
+
+    .firstlayout{
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    .firstlayout{
+        width: 300px;
+        cursor: pointer;
+    }
+    
+    .firstlayoutimg img{
+        width: 300px;
+        border-radius:20px;
+    }
+
+    .chanelpic img{
+        width: 30px;
+        border-radius: 50px;
+        padding: 10px 10px;
+    }
+    
+    .text-first-layout{
+        width: 200px;
+    }
+    
+    .videotitle{
+        font-size: 15px;
+        font-weight: 500;
+        
+    }
+    
+    .chanel-name{
+        color: rgb(123, 119, 119);
+        font-size: 10px;
+    }
+    
+    .revies{
+        font-size: 10px;
+        color: rgb(123, 119, 119);
+    }
+
+}  
+
+
+@media (min-width: 1000px) {
+    .search-engine{
+        width: 500px;
+    }
+
+    .search-engine input{
+        width: 450px;
+    }
+
+    .first-content{
+        position: relative;
+        top: 90px;
+        left: 100px;
+    }
+}
+
+
+.home{
+    text-align: center;
+    
+}
+.home i{
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.home p{
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+@media  (max-width:1024px) {
+    .sidebar{
+        position: fixed;
+        display: flex;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 89%;
+        gap: 40px;
+        justify-content: center;
+        align-items: end;
+        background-color: white;
+        z-index: 1000;
+        
+    }
+
+    
+}
